@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="probandoKC_13_12" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="yfC-h7-okf" id="q0p-a8-xPA"/>
+                <outlet property="loginButtom" destination="zSU-3o-ZGk" id="Nce-vQ-33y"/>
+                <outlet property="passwordTextField" destination="2Tc-MA-6vS" id="3d3-dE-BQn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-KT-lRp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfC-h7-okf">
+                    <rect key="frame" x="80" y="252.66666666666663" width="215" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Tc-MA-6vS">
+                    <rect key="frame" x="80" y="316.66666666666669" width="215" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zSU-3o-ZGk">
+                    <rect key="frame" x="154.66666666666666" y="400.66666666666669" width="66" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login"/>
+                    <connections>
+                        <action selector="loginButtomAction:" destination="-1" eventType="touchUpInside" id="M2d-fV-Hak"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yfC-h7-okf" secondAttribute="trailing" constant="80" id="1KV-q1-DrA"/>
+                <constraint firstAttribute="bottom" secondItem="q9S-KT-lRp" secondAttribute="bottom" id="2yu-kY-JVn"/>
+                <constraint firstItem="zSU-3o-ZGk" firstAttribute="top" secondItem="2Tc-MA-6vS" secondAttribute="bottom" constant="50" id="5aV-aI-mc6"/>
+                <constraint firstItem="2Tc-MA-6vS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="6Xt-0H-aJI"/>
+                <constraint firstItem="yfC-h7-okf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Wv-Ef-hRX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q9S-KT-lRp" secondAttribute="trailing" id="GHK-w6-lB7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Tc-MA-6vS" secondAttribute="trailing" constant="80" id="KM0-xN-RUg"/>
+                <constraint firstItem="2Tc-MA-6vS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SEd-hK-Zau"/>
+                <constraint firstItem="2Tc-MA-6vS" firstAttribute="top" secondItem="yfC-h7-okf" secondAttribute="bottom" constant="30" id="V06-7X-0Z5"/>
+                <constraint firstItem="yfC-h7-okf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="80" id="be1-M2-sQL"/>
+                <constraint firstItem="zSU-3o-ZGk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c8Z-ew-KiI"/>
+                <constraint firstItem="q9S-KT-lRp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ufr-Ps-EgA"/>
+                <constraint firstItem="q9S-KT-lRp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y7i-a7-JAS"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fondo2" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
