@@ -16,7 +16,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowsScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowsScene)
-        window?.rootViewController = LoginViewController()
+        if  LocalDataLayer.shared.isUserLogger() {
+            window?.rootViewController = HomeTabBarViewController()
+            
+        } else {
+            window?.rootViewController = LoginViewController()
+        }
+        
         window?.makeKeyAndVisible()
     }
 

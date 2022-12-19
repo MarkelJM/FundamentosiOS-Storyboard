@@ -34,6 +34,12 @@ class LoginViewController: UIViewController {
                 LocalDataLayer.shared.save(token: token)
                 print("we got a a good token")
                 print(token)
+                DispatchQueue.main.async {
+                    //deprecated form
+                    //UIApplication.shared.keyWindow?.rootViewController = HomeTabBarViewController()
+                    UIApplication.shared.connectedScenes.compactMap{($0 as? UIWindowScene)?.keyWindow}.first?.rootViewController = HomeTabBarViewController()
+                }
+                
             } else {
                 print( "Login Error: ", error?.localizedDescription ?? "")
             }

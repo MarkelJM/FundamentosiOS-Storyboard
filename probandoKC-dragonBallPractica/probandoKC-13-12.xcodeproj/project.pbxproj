@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D342708B295114D600A6F215 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3427089295114D600A6F215 /* DetailsViewController.swift */; };
+		D342708C295114D600A6F215 /* DetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D342708A295114D600A6F215 /* DetailsViewController.xib */; };
 		D34555842948FBCF00681882 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34555832948FBCF00681882 /* AppDelegate.swift */; };
 		D34555862948FBCF00681882 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34555852948FBCF00681882 /* SceneDelegate.swift */; };
 		D345558D2948FBD000681882 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D345558C2948FBD000681882 /* Assets.xcassets */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3427089295114D600A6F215 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		D342708A295114D600A6F215 /* DetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsViewController.xib; sourceTree = "<group>"; };
 		D34555802948FBCF00681882 /* probandoKC-13-12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "probandoKC-13-12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34555832948FBCF00681882 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D34555852948FBCF00681882 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3427088295114AE00A6F215 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				D3427089295114D600A6F215 /* DetailsViewController.swift */,
+				D342708A295114D600A6F215 /* DetailsViewController.xib */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
 		D34555772948FBCF00681882 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +167,7 @@
 		D34555B32948FBF000681882 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D3427088295114AE00A6F215 /* DetailsView */,
 				D3D4B7F4294BB64200F086CC /* LoginView */,
 				D34555C229491DC800681882 /* CollectionView */,
 				D34555BF2949161600681882 /* HomeTabBar */,
@@ -354,6 +368,7 @@
 				D34555BE2949083500681882 /* TableCell.xib in Resources */,
 				D3D4B7FC294BB7FF00F086CC /* LoginViewController.xib in Resources */,
 				D345558D2948FBD000681882 /* Assets.xcassets in Resources */,
+				D342708C295114D600A6F215 /* DetailsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +404,7 @@
 				D34555BD2949083500681882 /* TableCell.swift in Sources */,
 				D3D4B801294BC34E00F086CC /* NetworkLayer.swift in Sources */,
 				D34555862948FBCF00681882 /* SceneDelegate.swift in Sources */,
+				D342708B295114D600A6F215 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
