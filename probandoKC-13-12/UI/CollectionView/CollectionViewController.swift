@@ -51,11 +51,11 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemsInRow: CGFloat = 2
-        let spacing : CGFloat = 12
+        let spacing : CGFloat = 10
         let totalSpacing : CGFloat = ( itemsInRow - 1) * spacing
         let finalWidth = ( collectionView.frame.width - totalSpacing) /  itemsInRow
         
-        return CGSize(width: finalWidth, height: 120)
+        return CGSize(width: finalWidth, height: 140)
         
         
     }

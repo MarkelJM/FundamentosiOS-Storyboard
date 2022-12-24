@@ -50,6 +50,21 @@ class TransformationViewController: UIViewController , UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
+    /* función que ordene tranformaciones ya que algunas vienen desordenada*/
+    
+
+    func listaIniciales(lista: [String]) -> [String] {
+        var iniciales: [String] = []
+        
+        for string in lista {
+            let inicial = String(string.prefix(1))
+            iniciales.append(inicial)
+        }
+        return iniciales
+    }
+    
+    /*función para quitar el primer elemento stringde los titles*/
    
     
 }
