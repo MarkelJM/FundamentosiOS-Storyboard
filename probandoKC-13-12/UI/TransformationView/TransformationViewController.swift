@@ -12,6 +12,7 @@ class TransformationViewController: UIViewController , UITableViewDelegate, UITa
     @IBOutlet weak var tableView: UITableView!
     var transformations : [Transformation] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,8 +39,10 @@ class TransformationViewController: UIViewController , UITableViewDelegate, UITa
         return cell*/
         let cell = tableView.dequeueReusableCell(withIdentifier: "customeTableCell", for: indexPath) as! TableCell
         let heroe = transformations[indexPath.row]
+        let nameSort : String = quitarNumerosTitulo(titulo: heroe.name)
+        
         cell.tableImage.setImage(url: heroe.photo)
-        cell.tableLabel.text = heroe.name
+        cell.tableLabel.text = nameSort
         cell.descLabel.text = heroe.description
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
@@ -51,20 +54,20 @@ class TransformationViewController: UIViewController , UITableViewDelegate, UITa
         return 140
     }
     
-    /* función que ordene tranformaciones ya que algunas vienen desordenada*/
+    /* funcin para quitar numeracion y puntos*/
     
-
-    func listaIniciales(lista: [String]) -> [String] {
-        var iniciales: [String] = []
+    /* funcion para quitar numeracion de los titlos de las trandformaciones*/
+    func quitarNumerosTitulo(titulo: String)-> String{
+        var originalString : String = titulo
+        let editedName = originalString.suffix(from: originalString.index(originalString.startIndex, offsetBy: 2))
+        return String(editedName)
+     }
+     
+    
+    
         
-        for string in lista {
-            let inicial = String(string.prefix(1))
-            iniciales.append(inicial)
-        }
-        return iniciales
-    }
     
-    /*función para quitar el primer elemento stringde los titles*/
+   
    
     
 }
